@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    | &#x9;&#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+    | &#x9;&#x9;
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH', crossorigin='anonymous')
+    | &#x9;&#x9;
+    link(rel='stylesheet', href='/css/styles.css')
+    | &#x9;&#x9;
+    | &#x9;&#x9;
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz', crossorigin='anonymous')
+    | &#x9;&#x9;
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    | &#x9;&#x9;
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    | &#x9;&#x9;
+    link(href='https://fonts.googleapis.com/css2?family=Imprima&display=swap', rel='stylesheet')
+    | &#x9;&#x9;
+    script(src='https://kit.fontawesome.com/6a25878162.js', crossorigin='anonymous')
+    | &#x9;&#x9;
+    title Document
+  | &#x9;
+  body
+    .modal-window
+      .title Let&apos;s Secure Your Future
+      | &#x9;&#x9;&#x9;
+      .formbold-main-wrapper
+        .formbold-form-wrapper 
+          form()
+            .formbold-mb-5
+              label.formbold-form-label(for='name')  Full Name 
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              input#name.formbold-form-input(type='text', name='name', placeholder='Full Name')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            .formbold-mb-5
+              label.formbold-form-label(for='phone')  Phone Number 
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              input#phone.formbold-form-input(type='text', name='phone', placeholder='Enter your phone number')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            .formbold-mb-5
+              label.formbold-form-label(for='email')  Email Address 
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              input#email.formbold-form-input(type='email', name='email', placeholder='Enter your email' required)
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            .flex.flex-wrap.formbold--mx-3
+              .w-full.formbold-px-3(class='sm:w-half')
+                .formbold-mb-5.w-full
+                  label.formbold-form-label(for='date')  Date 
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  input#date.formbold-form-input(type='datetime-local', name='startTime' required)
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            div
+              button(type='submit').formbold-btn Book Appointment
+    script( src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+    script( src='/js/notifications.js')
+    
+    //- method='GET', action='/api/v1/appointments/make-meeting'
+
+    //- method='POST', action='/api/v1/appointments/make-meeting'
+
+        - const now = new Date().toISOString().slice(0, 16) // "YYYY-MM-DDTHH:mm"

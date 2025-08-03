@@ -1,0 +1,17 @@
+/*************  ✨ Windsurf Command ⭐  *************/
+# Ignore node_modules directory
+node_modules/
+
+# Ignore any logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignore environment variable files
+.env
+
+# Ignore build output directories
+dist/
+build/
+
+/*******  3fd5677e-bc70-499b-a55d-77bcd728eb4e  *******/
